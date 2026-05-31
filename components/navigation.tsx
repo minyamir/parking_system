@@ -38,7 +38,7 @@ export default function Navigation() {
           <span className="text-white font-bold text-lg">ParkHub</span>
         </Link>
 
-        {/* Desktop Menu */}
+    
         <div className="hidden md:flex items-center gap-8">
           <Link href="/" className="text-gray-300 hover:text-white transition-colors">
             Parking Lot
