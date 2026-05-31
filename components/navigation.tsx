@@ -26,7 +26,7 @@ export default function Navigation() {
     setUser(null)
     setIsDropdownOpen(false)
   }
-    {/* Desktop Menu */}
+    
   return (
     <nav className="bg-slate-900/80 backdrop-blur-sm border-b border-slate-700/50 sticky top-0 z-50 animate-fade-in-up">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
