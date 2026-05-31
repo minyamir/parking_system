@@ -24,7 +24,7 @@ export default function ParkingLot({ onSpaceClick, selectedSpaceId }: ParkingLot
   const [vacantSpaces, setVacantSpaces] = useState(0)
 
   useEffect(() => {
-    // 
+    // Generate parking spaces in a grid layout
     const generatedSpaces: ParkingSpaceData[] = []
     const rows = 5
     const cols = 6
