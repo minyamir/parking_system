@@ -12,7 +12,21 @@ export default function LoginPage() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+    setIsLoading(true);
 
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    if (email && password) {
+      localStorage.setItem("user", JSON.stringify({ email, name: email.split("@")[0] }));
+      router.push("/");
+    } else {
+      setError("Please fill in all fields");
+      setIsLoading(false);
+    }
+  };
 
 
   return (
