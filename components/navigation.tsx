@@ -10,10 +10,7 @@ interface User {
 }
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [user, setUser] = useState<User | null>(null)
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
+ 
   useEffect(() => {
     const storedUser = localStorage.getItem("user")
     if (storedUser) {
