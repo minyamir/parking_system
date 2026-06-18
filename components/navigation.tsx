@@ -4,10 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-interface User {
-  name: string
-  email: string
-}
+
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
