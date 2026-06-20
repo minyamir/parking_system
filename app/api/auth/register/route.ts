@@ -1,6 +1,11 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-
+interface RegisterRequest {
+  email: string
+  password: string
+  name: string
+  vehicleNumber: string
+}
 
 export async function POST(request: NextRequest) {
   try {
