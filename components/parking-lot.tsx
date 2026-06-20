@@ -9,13 +9,7 @@ interface ParkingLotProps {
   selectedSpaceId: string | null
 }
 
-interface ParkingSpaceData {
-  id: string
-  occupied: boolean
-  x: number
-  z: number
-  lastUpdated: number
-}
+
 
 export default function ParkingLot({ onSpaceClick, selectedSpaceId }: ParkingLotProps) {
   const groupRef = useRef<Group>(null)
