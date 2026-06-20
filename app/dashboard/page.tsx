@@ -52,9 +52,7 @@ export default function DashboardPage() {
 
         {/* Content */}
         <div>
-          {activeTab === "overview" && <ParkingStats />}
-          {activeTab === "profile" && <UserProfile />}
-          {activeTab === "reservations" && <ReservationHistory />}
+
         </div>
       </main>
     </div>
