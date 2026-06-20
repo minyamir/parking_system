@@ -6,15 +6,6 @@ import Link from "next/link"
 import Navigation from "@/components/navigation"
 import Parking3DScene from "@/components/parking-3d-scene"
 
-export default function Home() {
-  const [user, setUser] = useState<{ name: string; email: string } | null>(null)
-
-  useEffect(() => {
-    const storedUser = localStorage.getItem("user")
-    if (storedUser) {
-      setUser(JSON.parse(storedUser))
-    }
-  }, [])
 
   return (
     <div className="min-h-screen bg-slate-950">
