@@ -1,6 +1,10 @@
 "use client"
 
-
+import { useState } from "react"
+import UserProfile from "@/components/user-profile"
+import ReservationHistory from "@/components/reservation-history"
+import ParkingStats from "@/components/parking-stats"
+import Navigation from "@/components/navigation"
 
 export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState<"overview" | "profile" | "reservations">("overview")
